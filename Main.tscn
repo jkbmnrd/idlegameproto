@@ -1,0 +1,180 @@
+[gd_scene load_steps=2 format=3 uid="uid://b80wwc5oejolg"]
+
+[ext_resource type="Script" uid="uid://du6nurixam0pg" path="res://main.gd" id="1_glv2v"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_glv2v")
+
+[node name="CansCountLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 9.0
+offset_right = 310.0
+offset_bottom = 110.0
+theme_override_font_sizes/font_size = 48
+text = "Cans: 0"
+
+[node name="USDCountLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 315.0
+offset_right = 310.0
+offset_bottom = 416.0
+theme_override_font_sizes/font_size = 48
+text = "USD: $0.00"
+
+[node name="HoboPointsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1194.0
+offset_right = 1485.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 48
+text = "PP: 0"
+
+[node name="IncrementButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 159.0
+offset_right = 274.0
+offset_bottom = 235.0
+text = "Click here to collect cans!"
+
+[node name="SellCansButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 457.0
+offset_right = 274.0
+offset_bottom = 533.0
+text = "Click here to sell all cans!"
+
+[node name="PrestigeCansButton" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1194.0
+offset_top = 87.0
+offset_right = 1449.0
+offset_bottom = 164.0
+
+[node name="Upgrade1Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1599.0
+offset_top = 856.0
+offset_right = 1834.0
+offset_bottom = 1011.0
+
+[node name="Upgrade2Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1599.0
+offset_top = 672.0
+offset_right = 1834.0
+offset_bottom = 827.0
+
+[node name="Upgrade3Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1599.0
+offset_top = 483.0
+offset_right = 1834.0
+offset_bottom = 638.0
+
+[node name="Building1Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1194.0
+offset_top = 856.0
+offset_right = 1429.0
+offset_bottom = 1011.0
+
+[node name="Building2Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1194.0
+offset_top = 672.0
+offset_right = 1429.0
+offset_bottom = 827.0
+
+[node name="Building3Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1194.0
+offset_top = 483.0
+offset_right = 1429.0
+offset_bottom = 638.0
+
+[node name="SaveButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 962.0
+offset_right = 179.0
+offset_bottom = 1051.0
+text = "Save Game"
+
+[node name="ResetButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 212.0
+offset_top = 962.0
+offset_right = 372.0
+offset_bottom = 1051.0
+text = "Reset Game"
+
+[node name="SaveNotification" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 818.0
+offset_top = 483.0
+offset_right = 981.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 52
+text = "Saved!"
+
+[node name="OfflineNotification" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 818.0
+offset_top = 483.0
+offset_right = 981.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 52
+text = "You earned blah"
+
+[node name="ErrorNotification" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 818.0
+offset_top = 483.0
+offset_right = 981.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 52
+text = "You earned blah"
+
+[node name="ResetNotification" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 818.0
+offset_top = 483.0
+offset_right = 1133.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 52
+text = "Game Reset!"
+
+[node name="LoadNotification" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 818.0
+offset_top = 483.0
+offset_right = 1017.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 52
+text = "Loaded!"
+
+[node name="PurchasedNotification" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 818.0
+offset_top = 483.0
+offset_right = 1096.0
+offset_bottom = 555.0
+theme_override_font_sizes/font_size = 52
+text = "Purchased!"
